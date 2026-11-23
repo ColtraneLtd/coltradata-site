@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ColtraDataAi: From Raw Data to Clear Decisions, Powered by AI</title>
+  <meta name="description" content="Transform Excel and CSV data into cleaned datasets, intelligent dashboards, AI-powered insights, and professional reports in minutes, without technical expertise." />
+  <link rel="canonical" href="https://coltradata.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://coltradata.com/" />
+  <meta property="og:title" content="ColtraDataAi: From Raw Data to Clear Decisions, Powered by AI" />
+  <meta property="og:description" content="Transform Excel and CSV data into cleaned datasets, intelligent dashboards, AI-powered insights, and professional reports in minutes, without technical expertise." />
+  <meta property="og:image" content="https://coltradata.com/assets/logo.png" />
+  <meta property="og:site_name" content="ColtraDataAi" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ColtraDataAi: From Raw Data to Clear Decisions, Powered by AI" />
+  <meta name="twitter:description" content="Transform Excel and CSV data into cleaned datasets, intelligent dashboards, AI-powered insights, and professional reports in minutes, without technical expertise." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="assets/logo.png" />
+  <meta name="theme-color" content="#1F4E79" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="ColtraDataAi" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://coltradata.com/#organization",
+    "name": "ColtraDataAi",
+    "url": "https://coltradata.com",
+    "logo": "https://coltradata.com/assets/logo.png",
+    "sameAs": ["https://www.linkedin.com/showcase/136473979/"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://coltradata.com/#website",
+    "url": "https://coltradata.com",
+    "name": "ColtraDataAi",
+    "publisher": { "@id": "https://coltradata.com/#organization" }
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary:   #1F4E79;
+      --accent:    #2E86AB;
+      --secondary: #D9E1F2;
+      --light:     #F8FAFC;
+      --success:   #46D324;
+      --text:      #1a2a3a;
+      --muted:     #5a6a7a;
+      --white:     #ffffff;
+      --radius:    12px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: var(--text); background: var(--white); line-height: 1.6; }
+
+    /* Nav */
+    nav { position: sticky; top: 0; z-index: 100; background: var(--white); border-bottom: 1px solid var(--secondary); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 68px; box-shadow: 0 2px 12px rgba(31,78,121,0.07); }
+    nav img { height: 62px; }
+    .nav-links { display: flex; gap: 2rem; align-items: center; }
+    .nav-links a { text-decoration: none; color: var(--primary); font-weight: 500; font-size: 0.95rem; transition: color 0.2s; }
+    .nav-links a.btn-primary { color: var(--white); background: var(--primary); }
+    .nav-links a.btn-login { color: var(--primary); }
+    .nav-links a:hover { color: var(--accent); }
+    .btn { display: inline-block; text-decoration: none; padding: 0.65rem 1.5rem; border-radius: 8px; font-weight: 600; font-size: 0.95rem; transition: all 0.2s; cursor: pointer; border: none; }
+    .btn.btn-primary { background: var(--primary); color: var(--white); }
+    .btn.btn-primary:hover { background: var(--accent); transform: translateY(-1px); }
+
+    /* Hero */
+    .hero { background: linear-gradient(135deg, var(--primary) 0%, #163d61 50%, var(--accent) 100%); color: var(--white); padding: 6rem 2rem 5rem; text-align: center; position: relative; overflow: hidden; }
+    .hero::before { content: ""; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+    .hero-content { position: relative; max-width: 820px; margin: 0 auto; }
+    .hero-badge { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: var(--white); font-size: 0.85rem; font-weight: 600; padding: 0.35rem 1rem; border-radius: 100px; margin-bottom: 1.5rem; letter-spacing: 0.05em; text-transform: uppercase; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; line-height: 1.15; margin-bottom: 1.25rem; text-wrap: balance; }
+    i { font-style: oblique 10deg; }
+    .hero h1 span { color: #7dd3fc; }
+    .hero p { font-size: clamp(1rem, 2vw, 1.2rem); color: rgba(255,255,255,0.88); max-width: 680px; margin: 0 auto 1.25rem; }
+    .hero-tagline { font-size: 1.1rem; font-weight: 700; letter-spacing: 0.08em; color: #7dd3fc; margin-bottom: 2.5rem; text-transform: uppercase; }
+    .hero-ctas { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-hero-primary { background: var(--white); color: var(--primary); font-weight: 700; padding: 0.9rem 2rem; border-radius: 10px; font-size: 1.05rem; text-decoration: none; display: inline-block; transition: all 0.2s; }
+    .btn-hero-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+    .btn-hero-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.6); font-weight: 600; padding: 0.9rem 2rem; border-radius: 10px; font-size: 1.05rem; text-decoration: none; display: inline-block; transition: all 0.2s; }
+    .btn-hero-outline:hover { background: rgba(255,255,255,0.1); border-color: var(--white); }
+    .hero-trust-strip { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem; }
+    .hero-trust-strip span { font-size: 0.8rem; color: rgba(255,255,255,0.7); display: flex; align-items: center; gap: 0.35rem; font-weight: 500; }
+    .hero-trust-strip span::before { content: ""; display: inline-block; width: 6px; height: 6px; background: var(--success); border-radius: 50%; flex-shrink: 0; }
+
+    /* Positioning banner */
+    .positioning { background: var(--secondary); text-align: center; padding: 1.5rem 2rem; border-bottom: 3px solid var(--accent); }
+    .positioning p { font-size: clamp(1.1rem, 2.5vw, 1.4rem); font-weight: 700; color: var(--primary); letter-spacing: 0.01em; }
+
+    /* Sections */
+    section { padding: 5rem 2rem; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-label { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; }
+    .section-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; color: var(--primary); margin-bottom: 1rem; line-height: 1.2; }
+    .section-subtitle { font-size: 1.05rem; color: var(--muted); max-width: 620px; margin-bottom: 3rem; }
+    .text-center { text-align: center; }
+    .text-center .section-subtitle { margin-left: auto; margin-right: auto; }
+
+    /* Features */
+    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+    .feature-card { background: var(--light); border: 1px solid var(--secondary); border-radius: var(--radius); padding: 1.75rem; transition: all 0.2s; }
+    .feature-card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(31,78,121,0.1); border-color: var(--accent); }
+    .feature-icon { font-size: 1.75rem; margin-bottom: 0.75rem; display: block; }
+    .feature-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; }
+    .feature-card p { font-size: 0.95rem; color: var(--muted); }
+
+    /* Steps */
+    .steps { background: var(--light); }
+    .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; }
+    .step { text-align: center; padding: 1.5rem; }
+    .step-number { width: 52px; height: 52px; background: var(--primary); color: var(--white); border-radius: 50%; font-size: 1.3rem; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; }
+    .step h3 { font-size: 1rem; font-weight: 700; color: var(--primary); margin-bottom: 0.4rem; }
+    .step p { font-size: 0.92rem; color: var(--muted); }
+
+    /* Demo */
+    .demo-box { background: var(--primary); border-radius: 16px; padding: 3rem 2rem; text-align: center; color: var(--white); max-width: 760px; margin: 0 auto; }
+    .demo-box h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 0.75rem; }
+    .demo-box p { color: rgba(255,255,255,0.8); margin-bottom: 1.5rem; font-size: 0.95rem; }
+    .demo-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem 2rem; text-align: left; margin-bottom: 2rem; list-style: none; }
+    .demo-list li { font-size: 0.92rem; color: rgba(255,255,255,0.85); }
+    .demo-list li::before { content: "▶  "; color: #7dd3fc; }
+    .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; margin-bottom: 1.5rem; background: rgba(0,0,0,0.3); }
+    .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 12px; }
+
+    /* Sample Downloads */
+    .downloads { background: var(--light); }
+    .downloads-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; max-width: 1100px; margin: 0 auto; }
+    .download-card { background: var(--white); border: 2px solid var(--secondary); border-radius: var(--radius); padding: 2rem; display: flex; flex-direction: column; align-items: flex-start; transition: all 0.2s; }
+    .download-card:hover { box-shadow: 0 8px 24px rgba(31,78,121,0.12); transform: translateY(-2px); }
+    .download-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    .download-card h3 { font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; }
+    .download-card p { font-size: 0.9rem; color: var(--muted); margin-bottom: 1.25rem; flex: 1; }
+    .download-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.25rem; }
+    .download-tag { background: var(--secondary); color: var(--primary); font-size: 0.78rem; font-weight: 600; padding: 0.2rem 0.6rem; border-radius: 100px; }
+    .btn-download { display: inline-block; text-decoration: none; padding: 0.65rem 1.4rem; background: var(--primary); color: var(--white); border-radius: 8px; font-weight: 600; font-size: 0.9rem; transition: all 0.2s; }
+    .btn-download:hover { background: var(--accent); }
+
+    /* Pricing */
+    .pricing { background: var(--light); }
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; align-items: start; }
+    .plan-card { background: var(--white); border: 2px solid var(--secondary); border-radius: var(--radius); padding: 2rem 1.5rem; transition: all 0.2s; position: relative; }
+    .plan-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(31,78,121,0.12); }
+    .plan-card.featured { border-color: var(--accent); box-shadow: 0 8px 24px rgba(46,134,171,0.2); }
+    .plan-badge { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: var(--accent); color: var(--white); font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.9rem; border-radius: 100px; letter-spacing: 0.05em; text-transform: uppercase; white-space: nowrap; }
+    .plan-name { font-size: 1rem; font-weight: 700; color: var(--muted); margin-bottom: 0.5rem; }
+    .plan-price { font-size: 2.2rem; font-weight: 800; color: var(--primary); line-height: 1; margin-bottom: 0.25rem; }
+    .plan-price span { font-size: 1rem; font-weight: 500; color: var(--muted); }
+    .plan-blurb { font-size: 0.88rem; color: var(--muted); margin: 0.75rem 0 1.25rem; min-height: 2.5em; }
+    .plan-features { list-style: none; margin-bottom: 1.75rem; }
+    .plan-features li { font-size: 0.88rem; color: var(--text); padding: 0.3rem 0; border-bottom: 1px solid var(--secondary); display: flex; gap: 0.5rem; align-items: flex-start; }
+    .plan-features li:last-child { border-bottom: none; }
+    .plan-features li::before { content: "✓"; color: var(--success); font-weight: 700; flex-shrink: 0; }
+    .plan-cta { display: block; text-align: center; text-decoration: none; padding: 0.75rem; border-radius: 8px; font-weight: 700; font-size: 0.95rem; transition: all 0.2s; background: var(--primary); color: var(--white); }
+    .plan-cta:hover { background: var(--accent); transform: translateY(-1px); }
+    .plan-cta.free-cta { background: var(--secondary); color: var(--primary); }
+    .plan-cta.free-cta:hover { background: var(--primary); color: var(--white); }
+
+    /* About */
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .about-text p { font-size: 1.05rem; color: var(--muted); margin-bottom: 1rem; }
+    .about-text strong { color: var(--primary); }
+    .about-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem; }
+    .tag { background: var(--secondary); color: var(--primary); padding: 0.35rem 0.9rem; border-radius: 100px; font-size: 0.82rem; font-weight: 600; }
+    .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .stat-card { background: var(--light); border: 1px solid var(--secondary); border-radius: var(--radius); padding: 1.5rem; text-align: center; }
+    .stat-number { font-size: 2rem; font-weight: 800; color: var(--primary); }
+    .stat-label { font-size: 0.85rem; color: var(--muted); margin-top: 0.25rem; }
+
+    /* Closing CTA */
+    .closing { background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%); color: var(--white); text-align: center; padding: 5rem 2rem; }
+    .closing h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800; margin-bottom: 1rem; }
+    .closing p { font-size: 1.1rem; color: rgba(255,255,255,0.85); max-width: 600px; margin: 0 auto 2.5rem; }
+    .closing-ctas { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    /* Footer */
+    footer { background: #0d1e2e; color: rgba(255,255,255,0.6); padding: 2.5rem 2rem; text-align: center; }
+    footer img { height: 52px; opacity: 0.7; margin-bottom: 1rem; }
+    footer p { font-size: 0.82rem; line-height: 1.8; }
+    footer a { color: rgba(255,255,255,0.5); text-decoration: none; }
+    footer a:hover { color: var(--white); }
+    .footer-links { display: flex; gap: 1.5rem; justify-content: center; margin-bottom: 1rem; flex-wrap: wrap; }
+
+    /* Login nav button */
+    .btn-login { background: transparent; color: var(--primary); border: 2px solid var(--primary); }
+    .btn-login:hover { background: var(--primary); color: var(--white); }
+
+    /* Free Health Check spotlight section */
+    .health-check-section { background: linear-gradient(135deg, #EFF6FF 0%, #E0F2FE 100%); border-top: 3px solid var(--accent); border-bottom: 3px solid var(--accent); padding: 4rem 2rem; }
+    .health-check-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+    .health-check-badge { display: inline-block; background: var(--accent); color: var(--white); font-size: 0.78rem; font-weight: 700; padding: 0.3rem 0.9rem; border-radius: 100px; letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 0.9rem; }
+    .health-check-title { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; color: var(--primary); line-height: 1.2; margin-bottom: 0.75rem; }
+    .health-check-sub { font-size: 1rem; color: var(--muted); margin-bottom: 1.5rem; line-height: 1.6; }
+    .health-check-points { list-style: none; margin-bottom: 1.75rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem 1rem; }
+    .health-check-points li { font-size: 0.9rem; color: var(--text); display: flex; align-items: flex-start; gap: 0.4rem; }
+    .health-check-points li::before { content: "✓"; color: var(--success); font-weight: 800; flex-shrink: 0; }
+    .btn-health-check { display: inline-block; text-decoration: none; background: var(--primary); color: var(--white); font-weight: 700; font-size: 1rem; padding: 0.85rem 2rem; border-radius: 10px; transition: all 0.2s; }
+    .btn-health-check:hover { background: var(--accent); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(31,78,121,0.2); }
+    .health-check-note { font-size: 0.8rem; color: var(--muted); margin-top: 0.6rem; }
+    .health-check-preview { background: var(--white); border-radius: 16px; border: 1px solid #BFDBFE; box-shadow: 0 8px 28px rgba(31,78,121,0.1); padding: 1.5rem; }
+    .hcp-score-ring { width: 90px; height: 90px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-direction: column; margin: 0 auto 1rem; font-weight: 800; box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+    .hcp-title { font-size: 0.85rem; font-weight: 700; color: var(--primary); text-align: center; margin-bottom: 0.9rem; }
+    .hcp-bar-row { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.45rem; }
+    .hcp-bar-label { font-size: 0.75rem; color: var(--muted); width: 90px; flex-shrink: 0; }
+    .hcp-bar-bg { flex: 1; height: 7px; background: #E6ECF0; border-radius: 4px; overflow: hidden; }
+    .hcp-bar-fill { height: 7px; border-radius: 4px; }
+    .hcp-bar-pts { font-size: 0.72rem; font-weight: 700; color: var(--primary); width: 36px; text-align: right; flex-shrink: 0; }
+    .hcp-obs { background: #F0F7FF; border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 0.55rem 0.85rem; margin-top: 0.9rem; font-size: 0.82rem; color: #1A2F45; line-height: 1.5; }
+    .hcp-locked { background: #F9FAFB; border: 2px dashed #D1D5DB; border-radius: 10px; padding: 0.6rem 0.9rem; text-align: center; margin-top: 0.7rem; color: #9CA3AF; font-size: 0.78rem; }
+    @media (max-width: 768px) {
+      .health-check-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .health-check-points { grid-template-columns: 1fr; }
+    }
+
+    /* FAQ */
+    .faq-list { max-width: 760px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid var(--secondary); }
+    .faq-q { width: 100%; background: none; border: none; text-align: left; padding: 1.25rem 0; font-size: 1rem; font-weight: 600; color: var(--primary); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; font-family: inherit; }
+    .faq-q:hover { color: var(--accent); }
+    .faq-icon { font-size: 1.4rem; font-weight: 300; flex-shrink: 0; transition: transform 0.2s; line-height: 1; }
+    .faq-q.open .faq-icon { transform: rotate(45deg); }
+    .faq-a { display: none; padding: 0 0 1.25rem; }
+    .faq-a.open { display: block; }
+    .faq-a p { font-size: 0.95rem; color: var(--muted); line-height: 1.65; }
+    .faq-a a { color: var(--accent); }
+
+    /* Chatbot */
+    .chat-toggle { position: fixed; bottom: 1.5rem; right: 1.5rem; width: 56px; height: 56px; background: var(--primary); color: var(--white); border: none; border-radius: 50%; font-size: 1.4rem; cursor: pointer; box-shadow: 0 4px 20px rgba(31,78,121,0.4); z-index: 1000; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+    .chat-toggle:hover { background: var(--accent); transform: scale(1.08); }
+    .chat-window { position: fixed; bottom: 5rem; right: 1.5rem; width: 320px; max-height: 460px; background: var(--white); border: 1px solid var(--secondary); border-radius: 16px; box-shadow: 0 8px 32px rgba(31,78,121,0.18); z-index: 999; flex-direction: column; overflow: hidden; display: none; }
+    .chat-window.open { display: flex; }
+    .chat-header { background: var(--primary); color: var(--white); padding: 0.9rem 1.25rem; font-weight: 700; font-size: 0.95rem; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0; }
+    .chat-close-btn { background: none; border: none; color: rgba(255,255,255,0.8); font-size: 1.2rem; cursor: pointer; line-height: 1; padding: 0; }
+    .chat-close-btn:hover { color: var(--white); }
+    .chat-messages { flex: 1; overflow-y: auto; padding: 1rem; display: flex; flex-direction: column; gap: 0.75rem; min-height: 180px; }
+    .chat-msg { max-width: 85%; padding: 0.6rem 0.9rem; border-radius: 10px; font-size: 0.88rem; line-height: 1.5; }
+    .chat-msg.bot { background: var(--secondary); color: var(--text); align-self: flex-start; border-bottom-left-radius: 3px; }
+    .chat-msg.user { background: var(--primary); color: var(--white); align-self: flex-end; border-bottom-right-radius: 3px; }
+    .chat-msg a { color: inherit; text-decoration: underline; }
+    .chat-chips { padding: 0 0.75rem 0.75rem; display: flex; flex-wrap: wrap; gap: 0.4rem; flex-shrink: 0; }
+    .chat-chip { background: var(--secondary); color: var(--primary); border: none; padding: 0.3rem 0.7rem; border-radius: 100px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .chat-chip:hover { background: var(--primary); color: var(--white); }
+    .chat-input-row { display: flex; border-top: 1px solid var(--secondary); flex-shrink: 0; }
+    .chat-input { flex: 1; border: none; padding: 0.75rem 1rem; font-size: 0.88rem; outline: none; font-family: inherit; color: var(--text); }
+    .chat-send-btn { background: var(--primary); color: var(--white); border: none; padding: 0.75rem 1rem; cursor: pointer; font-size: 1rem; transition: background 0.2s; }
+    .chat-send-btn:hover { background: var(--accent); }
+
+    /* Cookie consent */
+    .cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: #0d1e2e; color: rgba(255,255,255,0.9); padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; z-index: 2000; font-size: 0.88rem; box-shadow: 0 -4px 20px rgba(0,0,0,0.3); }
+    .cookie-banner a { color: #7dd3fc; }
+    .cookie-btns { display: flex; gap: 0.75rem; flex-shrink: 0; }
+    .cookie-accept { background: var(--accent); color: var(--white); border: none; padding: 0.55rem 1.25rem; border-radius: 6px; font-weight: 700; cursor: pointer; font-size: 0.88rem; font-family: inherit; transition: background 0.2s; }
+    .cookie-accept:hover { background: var(--primary); }
+    .cookie-decline { background: transparent; color: rgba(255,255,255,0.7); border: 1px solid rgba(255,255,255,0.3); padding: 0.55rem 1.25rem; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 0.88rem; font-family: inherit; transition: all 0.2s; }
+    .cookie-decline:hover { border-color: rgba(255,255,255,0.7); color: var(--white); }
+    .cookie-visible .chat-toggle { bottom: 5.5rem; }
+    .cookie-visible .chat-window { bottom: 7.5rem; }
+
+    /* Testimonials */
+    .testimonials { background: var(--secondary); }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .testimonial-card { background: var(--white); border-radius: var(--radius); padding: 1.75rem; border-left: 4px solid var(--accent); }
+    .testimonial-card p { font-size: 0.97rem; color: var(--text); line-height: 1.7; font-style: italic; margin-bottom: 1rem; }
+    .testimonial-author { font-size: 0.85rem; font-weight: 700; color: var(--primary); }
+
+    /* Works Everywhere */
+    .works-everywhere { background: var(--primary); color: var(--white); }
+    .works-everywhere .section-label { color: #7dd3fc; }
+    .works-everywhere .section-title { color: var(--white); }
+    .works-everywhere-content { display: grid; grid-template-columns: 1.2fr 1fr; gap: 3.5rem; align-items: start; }
+    .works-text p { color: rgba(255,255,255,0.85); font-size: 1.05rem; margin-bottom: 1rem; line-height: 1.7; }
+    .install-steps { margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.6rem; }
+    .install-step { background: rgba(255,255,255,0.1); border-radius: 8px; padding: 0.7rem 1rem; font-size: 0.9rem; color: rgba(255,255,255,0.9); }
+    .install-step strong { color: var(--white); }
+    .works-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .works-card { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius); padding: 1.25rem; }
+    .works-card-icon { font-size: 1.4rem; margin-bottom: 0.5rem; display: block; }
+    .works-card h4 { font-size: 0.92rem; font-weight: 700; color: var(--white); margin-bottom: 0.3rem; }
+    .works-card p { font-size: 0.82rem; color: rgba(255,255,255,0.7); margin: 0; line-height: 1.4; }
+    .pricing-note-wrap { text-align: center; margin-top: 1.5rem; }
+    .pricing-note { display: inline-block; font-size: 0.9rem; color: var(--muted); background: var(--white); border: 1px solid var(--secondary); border-radius: 8px; padding: 0.8rem 1.5rem; }
+
+    /* Solutions dropdown */
+    .nav-dropdown { position: relative; }
+    .nav-dropdown > a::after { content: " ▾"; font-size: 0.75rem; }
+    .nav-dropdown-menu { position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: var(--white); border: 1px solid var(--secondary); border-radius: var(--radius); box-shadow: 0 8px 28px rgba(31,78,121,0.14); min-width: 240px; padding: 0.75rem 0 0.5rem; z-index: 200; display: none; }
+    .nav-dropdown:hover .nav-dropdown-menu, .nav-dropdown:focus-within .nav-dropdown-menu { display: block; }
+    .nav-dropdown-menu a { display: block; padding: 0.55rem 1.25rem; color: var(--text); font-size: 0.9rem; font-weight: 500; text-decoration: none; transition: background 0.15s; white-space: nowrap; }
+    .nav-dropdown-menu a::after { display: none; }
+    .nav-dropdown-menu a:hover { background: var(--secondary); color: var(--primary); }
+
+    /* Who It's For, persona cards */
+    .persona-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+    .persona-card { background: var(--light); border: 1px solid var(--secondary); border-radius: var(--radius); padding: 1.75rem; text-decoration: none; color: inherit; display: block; transition: all 0.2s; }
+    .persona-card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(31,78,121,0.1); border-color: var(--accent); }
+    .persona-icon { font-size: 2rem; display: block; margin-bottom: 0.75rem; }
+    .persona-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; }
+    .persona-card p { font-size: 0.92rem; color: var(--muted); margin-bottom: 1rem; line-height: 1.5; }
+    .persona-link { font-size: 0.88rem; font-weight: 700; color: var(--accent); }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav { padding: 0 1rem; }
+      .nav-links a:not(:last-child):not(.btn-login):not(.btn-primary) { display: none; }
+      .nav-dropdown { display: none; }
+      section { padding: 3.5rem 1.25rem; }
+      .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .demo-list { grid-template-columns: 1fr; }
+      .works-everywhere-content { grid-template-columns: 1fr; gap: 2rem; }
+    }
+    @media (max-width: 500px) {
+      .works-cards { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .chat-window { right: 0.75rem; left: 0.75rem; width: auto; }
+      .cookie-banner { padding: 1rem; }
+    }
+
+    /* Billing toggle */
+    .billing-toggle-row { display:flex; align-items:center; justify-content:center; gap:0.9rem; padding:1.5rem 0 0.75rem; }
+    .toggle-label { font-size:0.95rem; font-weight:600; color:var(--muted); transition:color 0.2s; }
+    .toggle-label.active { color:var(--primary); }
+    .save-chip { background:#FEF3C7; color:#92400E; font-size:0.7rem; font-weight:700; padding:2px 8px; border-radius:100px; margin-left:0.4rem; vertical-align:middle; }
+    .billing-switch { position:relative; display:inline-block; width:48px; height:26px; flex-shrink:0; }
+    .billing-switch input { opacity:0; width:0; height:0; }
+    .billing-slider { position:absolute; cursor:pointer; top:0; left:0; right:0; bottom:0; background:#D9E1F2; border-radius:26px; transition:0.25s; }
+    .billing-slider::before { position:absolute; content:""; height:18px; width:18px; left:4px; bottom:4px; background:white; border-radius:50%; transition:0.25s; box-shadow:0 1px 4px rgba(0,0,0,0.2); }
+    input:checked + .billing-slider { background:var(--primary); }
+    input:checked + .billing-slider::before { transform:translateX(22px); }
+    .annual-price { display:none; }
+    .annual-saving { display:none; font-size:0.72rem; font-weight:700; background:#FEF3C7; color:#92400E; padding:2px 8px; border-radius:100px; margin-bottom:0.4rem; }
+    body.annual-mode .monthly-price { display:none; }
+    body.annual-mode .annual-price { display:block; }
+    body.annual-mode .annual-saving { display:inline-block; }
+    .plan-price .price-equiv { display:block; font-size:0.72rem; font-weight:500; color:var(--muted); margin-top:2px; }
+    .cta-annual-only { display:none !important; }
+    body.annual-mode .cta-monthly-only { display:none !important; }
+    body.annual-mode .cta-annual-only { display:inline-block !important; }
+  </style>
+  <script>window.lemonSqueezyAffiliateConfig = { store: "coltradataai" };</script>
+  <script src="https://lmsqueezy.com/affiliate.js" defer></script>
+</head>
+<body>
+
+<!-- Nav -->
+<nav>
+  <a href="#"><img src="assets/logo.png" alt="ColtraDataAi" /></a>
+  <div class="nav-links">
+    <a href="#features">Features</a>
+    <div class="nav-dropdown">
+      <a href="#who-its-for">Solutions</a>
+      <div class="nav-dropdown-menu">
+        <a href="consultants.html">💼 Consultants</a>
+        <a href="finance-teams.html">📊 Finance Teams</a>
+        <a href="bookkeepers.html">📚 Bookkeepers &amp; Accountants</a>
+        <a href="smes.html">🏢 SMEs</a>
+        <a href="healthcare.html">🏥 Healthcare</a>
+        <a href="researchers.html">🔬 Researchers</a>
+        <a href="logistics.html">🚚 Logistics Companies</a>
+        <a href="importers-exporters.html">🌍 Importers &amp; Exporters</a>
+        <a href="retail.html">🛒 Retail Businesses</a>
+        <a href="hospitality.html">🏨 Hospitality</a>
+        <a href="clinical-trials.html">🧬 Clinical Trials</a>
+        <a href="data-analysts.html">🔍 Freelance Data Analysts</a>
+      </div>
+    </div>
+    <a href="#demo">Demo</a>
+    <a href="#samples">Sample Report</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+    <a href="https://app.coltradata.com" class="btn btn-login">Log In</a>
+    <a href="https://app.coltradata.com/Free_Health_Check" class="btn btn-primary" style="background:var(--accent);">🔍 Free Health Check</a>
+    <a href="#pricing" class="btn btn-primary">Start Free</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">AI-Powered Data Analytics Platform</div>
+    <h1>Transform Raw Data into <span>Business-Ready Insights</span> in&nbsp;Minutes</h1>
+    <p>Save hours of manual spreadsheet work and turn raw Excel or CSV files into actionable insights in minutes.</p>
+    <p>Upload your data and instantly generate cleaned datasets, AI-powered insights, interactive dashboards, and boardroom-ready reports.</p>
+    <p>Whether you're a business owner, manager, accountant, consultant, or data analyst, ColtraDataAi helps you spend less time preparing data and more time making decisions.</p>
+    <div class="hero-tagline">Clean &nbsp;·&nbsp; Analyse &nbsp;·&nbsp; Report &nbsp;·&nbsp; Decide</div>
+    <div class="hero-ctas">
+      <a href="https://app.coltradata.com" class="btn-hero-primary">🚀 Start Free Trial</a>
+      <a href="#free-health-check" class="btn-hero-outline">🔍 Free Health Check</a>
+      <a href="#demo" class="btn-hero-outline">▶️ Watch Demo</a>
+    </div>
+    <p style="margin-top:1.25rem; font-size:0.85rem; color:rgba(255,255,255,0.6); letter-spacing:0.02em;">Works on every device: desktop, tablet, or phone. No app store required.</p>
+    <div class="hero-trust-strip">
+      <span>No data stored permanently</span>
+      <span>GDPR compliant</span>
+      <span>UK-based processing</span>
+      <span>Free plan - no card required</span>
+    </div>
+  </div>
+</section>
+
+<!-- Positioning Banner -->
+<div class="positioning">
+  <p>Turn spreadsheets into boardroom-ready insights - for every team, every role, every business size.</p>
+</div>
+
+<!-- Free Data Health Check -->
+<section class="health-check-section" id="free-health-check">
+  <div class="health-check-inner">
+    <div class="health-check-left">
+      <span class="health-check-badge">Free · No Card Required</span>
+      <h2 class="health-check-title">Get Your Free Data Health Check in 2 Minutes</h2>
+      <p class="health-check-sub">Upload any Excel or CSV file and receive an instant quality report: your Data Quality Score, missing values analysis, duplicate detection, and 3 AI-powered observations, completely free.</p>
+      <ul class="health-check-points">
+        <li>Data Quality Score (0–100)</li>
+        <li>Missing values per column</li>
+        <li>Duplicate record count</li>
+        <li>Formatting inconsistencies</li>
+        <li>3 AI-powered observations</li>
+        <li>Column type breakdown</li>
+        <li>Visual charts &amp; summary</li>
+        <li>No signup required*</li>
+      </ul>
+      <a href="https://app.coltradata.com/Free_Health_Check" class="btn-health-check">🔍 Run My Free Health Check</a>
+      <p class="health-check-note">*Email address required for delivery · One free check per address · CSV &amp; XLSX · Up to 5,000 rows · 10 MB max</p>
+    </div>
+    <div class="health-check-right">
+      <!-- Preview card: simulates what the report looks like -->
+      <div class="health-check-preview">
+        <p class="hcp-title">📊 Data Health Report Preview</p>
+        <div class="hcp-score-ring" style="background:#ECFDF5;color:#065F46;">
+          <span style="font-size:1.8rem;line-height:1;">82</span>
+          <span style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.08em;margin-top:1px;">Good</span>
+        </div>
+        <div style="margin-top:0.5rem;">
+          <div class="hcp-bar-row">
+            <span class="hcp-bar-label">Completeness</span>
+            <div class="hcp-bar-bg"><div class="hcp-bar-fill" style="width:88%;background:#2E86AB;"></div></div>
+            <span class="hcp-bar-pts">30/35</span>
+          </div>
+          <div class="hcp-bar-row">
+            <span class="hcp-bar-label">Uniqueness</span>
+            <div class="hcp-bar-bg"><div class="hcp-bar-fill" style="width:85%;background:#48C9B0;"></div></div>
+            <span class="hcp-bar-pts">17/20</span>
+          </div>
+          <div class="hcp-bar-row">
+            <span class="hcp-bar-label">Consistency</span>
+            <div class="hcp-bar-bg"><div class="hcp-bar-fill" style="width:80%;background:#46D324;"></div></div>
+            <span class="hcp-bar-pts">20/25</span>
+          </div>
+          <div class="hcp-bar-row">
+            <span class="hcp-bar-label">Structure</span>
+            <div class="hcp-bar-bg"><div class="hcp-bar-fill" style="width:75%;background:#F59E0B;"></div></div>
+            <span class="hcp-bar-pts">15/20</span>
+          </div>
+        </div>
+        <div class="hcp-obs">
+          <strong style="color:#1F4E79;">#1</strong>&nbsp; Your dataset contains 3,842 rows across 12 columns (7 numeric, 5 text/categorical).
+        </div>
+        <div class="hcp-locked">🔒 Full AI report, cleaned dataset &amp; Excel export: upgrade to unlock</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Who It's For -->
+<section id="who-its-for">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">Built for Your Industry</div>
+      <h2 class="section-title">Who Uses ColtraDataAi?</h2>
+      <p class="section-subtitle">From bookkeepers cleaning client records to researchers validating field data: see how ColtraDataAi fits the way you work.</p>
+    </div>
+    <div class="persona-grid">
+      <a href="consultants.html" class="persona-card">
+        <span class="persona-icon">💼</span>
+        <h3>Consultants</h3>
+        <p>Turn client data dumps into boardroom-ready reports, delivered the same day they arrive.</p>
+        <span class="persona-link">See how it works for you →</span>
+      </a>
+      <a href="finance-teams.html" class="persona-card">
+        <span class="persona-icon">📊</span>
+        <h3>Finance Teams</h3>
+        <p>Faster reporting cycles without waiting on IT. Clean, analyse, and report independently.</p>
+        <span class="persona-link">See how it works for you →</span>
+      </a>
+      <a href="bookkeepers.html" class="persona-card">
+        <span class="persona-icon">📚</span>
+        <h3>Bookkeepers &amp; Accountants</h3>
+        <p>Clean messy client records before they hit your accounting software. Save hours every client, every month.</p>
+        <span class="persona-link">See how it works for you →</span>
+      </a>
+      <a href="smes.html" class="persona-card">
+        <span class="persona-icon">🏢</span>
+        <h3>SMEs</h3>
+        <p>Professional data reporting that works for your whole team. Starts from £29/month.</p>
+        <span class="persona-link">See how it works for you →</span>
+      </a>
+      <a href="healthcare.html" class="persona-card">
+        <span class="persona-icon">🏥</span>
+        <h3>Healthcare</h3>
+        <p>Clean patient records, flag missing clinical codes, and produce audit-ready datasets for CQC, NHS, and commissioner reporting.</p>
+        <span class="persona-link">See how it works for you →</span>
+      </a>
+      <a href="researchers.html" class="persona-card">
+        <span class="persona-icon">🔬</span>
+        <h3>Researchers</h3>
+        <p>Start analysis on solid ground. Systematic data cleaning with a full documented audit trail.</p>
+        <span class="persona-link">See how it works for you →</span>
+      </a>
+      <a href="logistics.html" class="persona-card">
+        <span class="persona-icon">🚚</span>
+        <h3>Logistics Companies</h3>
+        <p>Stop data errors from causing operational mistakes. Clean shipment and route records fast.</p>
+        <span class="persona-link">See how it works for you →</span>
+      </a>
+      <a href="importers-exporters.html" class="persona-card">
+        <span class="persona-icon">🌍</span>
+        <h3>Importers &amp; Exporters</h3>
+        <p>Standardise supplier records, flag customs data gaps, and produce clean trade files before errors cause delays or compliance failures.</p>
+        <span class="persona-link">See how it works for you →</span>
+      </a>
+      <a href="retail.html" class="persona-card">
+        <span class="persona-icon">🛒</span>
+        <h3>Retail Businesses</h3>
+        <p>Clean sales, stock, and customer data from your POS and inventory systems in minutes.</p>
+        <span class="persona-link">See how it works for you →</span>
+      </a>
+      <a href="hospitality.html" class="persona-card">
+        <span class="persona-icon">🏨</span>
+        <h3>Hospitality</h3>
+        <p>Clean booking records, F&amp;B inventory, and covers data from Opera, Mews, or Lightspeed. Fix date pairs, flag no-shows, and produce ADR summaries fast.</p>
+        <span class="persona-link">See how it works for you →</span>
+      </a>
+      <a href="clinical-trials.html" class="persona-card">
+        <span class="persona-icon">🧬</span>
+        <h3>Clinical Trials &amp; Research</h3>
+        <p>Validate NCT IDs, standardise researcher profiles, and produce audit-ready trial registers for CROs, NHS research teams, and pharmaceutical data managers.</p>
+        <span class="persona-link">See how it works for you →</span>
+      </a>
+      <a href="data-analysts.html" class="persona-card">
+        <span class="persona-icon">🔍</span>
+        <h3>Freelance Data Analysts</h3>
+        <p>Automate the data cleaning step and spend more time on the analysis clients actually pay for. Works alongside Python, R, Excel, and your existing workflow.</p>
+        <span class="persona-link">See how it works for you →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">Trusted By</div>
+      <h2 class="section-title">Used by Consultants, SMEs &amp; Analysts</h2>
+      <p class="section-subtitle">Professionals across industries use ColtraDataAi to transform spreadsheet data into actionable reports.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p>"I uploaded a messy client dataset and had a professional, client-ready PDF report in under five minutes. What used to take me a full afternoon now takes minutes."</p>
+        <div class="testimonial-author">Management Consultant</div>
+      </div>
+      <div class="testimonial-card">
+        <p>"Our finance team now produces clean, visualised reports in a fraction of the time. What used to take hours of preparation is done in minutes - and the results speak for themselves."</p>
+        <div class="testimonial-author">Finance Manager, SME</div>
+      </div>
+      <div class="testimonial-card">
+        <p>"The AI advisory picks up patterns I would have missed. It's like having a data scientist review every file I upload, at a fraction of the cost."</p>
+        <div class="testimonial-author">Business Analyst</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section id="features">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">Why ColtraDataAi</div>
+      <h2 class="section-title">Everything You Need to Turn Data into Decisions</h2>
+      <p class="section-subtitle">Six powerful capabilities in one platform. No coding, no consultants, no waiting.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🧹</span>
+        <h3>Automated Data Cleaning</h3>
+        <p>Identify and resolve common data quality issues in seconds. Duplicates, missing values, format errors handled automatically.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">📊</span>
+        <h3>Advanced Analytics</h3>
+        <p>Uncover trends, patterns, and performance drivers from your data. Go beyond basic summaries with intelligent analysis.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🤖</span>
+        <h3>AI-Powered Advisory</h3>
+        <p>Receive intelligent recommendations and actionable business insights generated directly from your data.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">📈</span>
+        <h3>Interactive Dashboards</h3>
+        <p>Visualise your data through clear and intuitive dashboards. Spot trends, outliers, and what matters most - instantly, from your own data.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">📄</span>
+        <h3>Professional Reports</h3>
+        <p>Generate downloadable PDF and Excel reports ready for stakeholders and clients, in one click.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🏷️</span>
+        <h3>Branded Reporting</h3>
+        <p>Premium and Enterprise users create custom-branded reports with company logos and corporate identity.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">📱</span>
+        <h3>Works on Any Device</h3>
+        <p>Full functionality on any phone, tablet, or desktop. Upload files, view dashboards, and download reports, all from your pocket. No app store required.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">⚡</span>
+        <h3>Nothing to Install</h3>
+        <p>Zero downloads. Zero updates. Open your browser and go. We handle everything server-side so you always have the latest version, on every device.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section class="steps" id="how-it-works">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">Simple Process</div>
+      <h2 class="section-title">From Upload to Insight in 3 Steps</h2>
+      <p class="section-subtitle">No technical expertise required. Just your data.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Upload Your File</h3>
+        <p>Drag and drop any Excel or CSV file. Up to 300MB on Enterprise plans.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Clean &amp; Analyse</h3>
+        <p>ColtraDataAi automatically cleans your data and generates dashboards, analytics, and AI insights.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Download &amp; Decide</h3>
+        <p>Export polished Excel or PDF reports, ready to share with clients and stakeholders.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Works Everywhere -->
+<section class="works-everywhere" id="mobile">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">Available on Every Device</div>
+      <h2 class="section-title">Your Data Lab: Anywhere You Are</h2>
+    </div>
+    <div class="works-everywhere-content">
+      <div class="works-text">
+        <p>ColtraDataAi runs entirely in your browser, no downloads, no installations, no waiting. Open it on your laptop at the office, your tablet in a meeting, or your phone on the train. Upload a spreadsheet, get a dashboard. Every feature works on every screen size.</p>
+        <p>Want the full app experience on your phone? Add ColtraDataAi to your home screen in one tap: it gets its own icon, opens full screen, and even sends you notifications when your reports are ready. No App Store. No Google Play. Just your browser.</p>
+        <div class="install-steps">
+          <div class="install-step"><strong>iPhone / iPad (Safari):</strong> Tap the Share button &rarr; "Add to Home Screen"</div>
+          <div class="install-step"><strong>Android (Chrome):</strong> Tap the three-dot menu &rarr; "Add to Home Screen" or "Install app"</div>
+        </div>
+      </div>
+      <div class="works-cards">
+        <div class="works-card">
+          <span class="works-card-icon">📱</span>
+          <h4>Works on Mobile</h4>
+          <p>Full functionality on any phone: upload, analyse, and download on the go.</p>
+        </div>
+        <div class="works-card">
+          <span class="works-card-icon">🏠</span>
+          <h4>Add to Home Screen</h4>
+          <p>One tap to install. Your own app icon, full-screen mode, no browser bar.</p>
+        </div>
+        <div class="works-card">
+          <span class="works-card-icon">🔔</span>
+          <h4>Smart Notifications</h4>
+          <p>Get notified when reports are ready. Works on Android and iPhone (iOS 16.4+).</p>
+        </div>
+        <div class="works-card">
+          <span class="works-card-icon">⚡</span>
+          <h4>Nothing to Install</h4>
+          <p>Zero downloads. Always the latest version. Open your browser and go.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Demo -->
+<section id="demo">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">See It in Action</div>
+      <h2 class="section-title">Watch ColtraDataAi Transform Your Data</h2>
+      <p class="section-subtitle">See how raw spreadsheets become actionable business intelligence in just a few clicks.</p>
+    </div>
+    <div class="demo-box">
+      <h3>▶️ Watch the 2-Minute Demo</h3>
+      <p>What you'll see in the demo:</p>
+      <ul class="demo-list">
+        <li>Data upload and validation</li>
+        <li>Automated data cleaning</li>
+        <li>Advanced analytics and insights</li>
+        <li>AI-powered advisory recommendations</li>
+        <li>Interactive dashboard generation</li>
+        <li>Branded PDF report downloads</li>
+      </ul>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/VIXCC46HL9I?rel=0" title="ColtraDataAi 2-Minute Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <a href="https://app.coltradata.com" class="btn-hero-primary">🚀 Try It Free Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- Sample Downloads -->
+<section class="downloads" id="samples">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">Sample Outputs</div>
+      <h2 class="section-title">See What ColtraDataAi Delivers</h2>
+      <p class="section-subtitle">Download a real report generated by ColtraDataAi from a live dataset. No sign-up required.</p>
+    </div>
+    <div class="downloads-grid">
+      <div class="download-card">
+        <div class="download-icon">📄</div>
+        <h3>Sample Cleaned Report (PDF)</h3>
+        <p>A full Professional-tier output: executive summary, data quality analysis, visual charts, AI-powered advisory, and a modelling readiness assessment, all generated from one CSV upload.</p>
+        <div class="download-tags">
+          <span class="download-tag">10 Pages</span>
+          <span class="download-tag">Professional Tier</span>
+          <span class="download-tag">AI Advisory</span>
+          <span class="download-tag">Charts Included</span>
+        </div>
+        <a href="assets/sample-report.pdf" download="ColtraDataAi_Sample_Report.pdf" class="btn-download">&#8659; Download Sample PDF</a>
+      </div>
+      <div class="download-card">
+        <div class="download-icon">📊</div>
+        <h3>Sample Excel Workbook</h3>
+        <p>The full multi-sheet Excel output: Raw Data, Cleaned Data, Cleaning Log, Quality Checks, Data Insights, Executive Summary with embedded charts, and an interactive Dashboard, all in one file.</p>
+        <div class="download-tags">
+          <span class="download-tag">Multi-Sheet</span>
+          <span class="download-tag">Premium Tier</span>
+          <span class="download-tag">Charts Embedded</span>
+          <span class="download-tag">Dashboard Included</span>
+        </div>
+        <a href="assets/sample-report.xlsx" download="ColtraDataAi_Sample_Report.xlsx" class="btn-download">&#8659; Download Sample Excel</a>
+      </div>
+      <div class="download-card">
+        <div class="download-icon">🧪</div>
+        <h3>Practice Dataset - Customs &amp; Trade</h3>
+        <p>No data of your own? Download this synthetic customs and trade dataset with realistic formatting errors, inconsistent values, and missing fields - then upload it to ColtraDataAi and see the cleaner in action.</p>
+        <div class="download-tags">
+          <span class="download-tag">Synthetic Data</span>
+          <span class="download-tag">Customs &amp; Trade</span>
+          <span class="download-tag">Ready to Upload</span>
+          <span class="download-tag">Free</span>
+        </div>
+        <a href="assets/trade_customs_dataset.xlsx" download="ColtraDataAi_Practice_Dataset.xlsx" class="btn-download">&#8659; Download Practice Dataset</a>
+      </div>
+      <div class="download-card">
+        <div class="download-icon">🚀</div>
+        <h3>Try It on Your Own Data</h3>
+        <p>Upload your own Excel or CSV file and see ColtraDataAi clean, analyse, and report on it in minutes. Free tier available, no credit card required.</p>
+        <div class="download-tags">
+          <span class="download-tag">Free Tier</span>
+          <span class="download-tag">Up to 5,000 Rows</span>
+          <span class="download-tag">Instant Results</span>
+          <span class="download-tag">No Card Required</span>
+        </div>
+        <a href="https://app.coltradata.com" class="btn-download">&#128640; Try Free Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">Simple Pricing</div>
+      <h2 class="section-title">Start Free. Scale as You Grow.</h2>
+      <p class="section-subtitle">No hidden fees. Cancel anytime. Upgrade or downgrade whenever you need.</p>
+    </div>
+    <div class="billing-toggle-row">
+      <span class="toggle-label active" id="idx-lbl-monthly">Monthly</span>
+      <label class="billing-switch" aria-label="Switch to annual billing">
+        <input type="checkbox" id="idxBillingToggle" onchange="toggleIdxBilling()" />
+        <span class="billing-slider"></span>
+      </label>
+      <span class="toggle-label" id="idx-lbl-annual">Annual <span class="save-chip">2 months free</span></span>
+    </div>
+    <div class="pricing-grid">
+      <div class="plan-card">
+        <div class="plan-name">Free</div>
+        <div class="plan-price">£0 <span>/ month</span></div>
+        <div class="plan-blurb">Clean small datasets and explore your data quality. No card required.</div>
+        <ul class="plan-features">
+          <li>3 cleaning runs per month</li>
+          <li>Up to 5,000 rows</li>
+          <li>10 MB file size limit</li>
+          <li>Automated data cleaning</li>
+          <li>Basic analytics</li>
+        </ul>
+        <a href="https://app.coltradata.com" class="plan-cta free-cta">Start Free</a>
+      </div>
+      <div class="plan-card">
+        <div class="plan-name">Starter</div>
+        <div class="plan-price">
+          <span class="monthly-price">£29 <span>/ month</span></span>
+          <span class="annual-price">£290 <span>/ year</span><span class="price-equiv">£24.17/mo, billed annually</span></span>
+        </div>
+        <span class="annual-saving">Save £58 - 2 months free</span>
+        <div class="plan-blurb">For consultants and small businesses: AI insights, Excel export, and 50 runs/month.</div>
+        <ul class="plan-features">
+          <li>50 cleaning runs per month</li>
+          <li>Up to 50,000 rows</li>
+          <li>25 MB file size limit</li>
+          <li>Excel export</li>
+          <li>AI-powered insights</li>
+        </ul>
+        <a href="https://coltradataai.lemonsqueezy.com/checkout/buy/d5d25833-3149-487f-a9d1-832c398d13e6" class="plan-cta cta-monthly-only">Get Starter</a>
+        <a href="https://coltradataai.lemonsqueezy.com/checkout/buy/4b3f6ae6-cbcf-48a6-aa99-63473a3102b0" class="plan-cta cta-annual-only">Get Starter (Annual)</a>
+      </div>
+      <div class="plan-card featured">
+        <div class="plan-badge">Most Popular</div>
+        <div class="plan-name">Professional</div>
+        <div class="plan-price">
+          <span class="monthly-price">£99 <span>/ month</span></span>
+          <span class="annual-price">£990 <span>/ year</span><span class="price-equiv">£82.50/mo, billed annually</span></span>
+        </div>
+        <span class="annual-saving">Save £198 - 2 months free</span>
+        <div class="plan-blurb">For SMEs and operations teams: full reports, API access, and advanced analytics.</div>
+        <ul class="plan-features">
+          <li>200 cleaning runs per month</li>
+          <li>Up to 250,000 rows</li>
+          <li>75 MB file size limit</li>
+          <li>Excel &amp; PDF export</li>
+          <li>Advanced analytics</li>
+          <li>AI-powered insights</li>
+          <li>API access</li>
+        </ul>
+        <a href="https://coltradataai.lemonsqueezy.com/checkout/buy/a358b1c4-70b8-4196-ab47-fe22153a488d" class="plan-cta cta-monthly-only">Get Professional</a>
+        <a href="https://coltradataai.lemonsqueezy.com/checkout/buy/bd8d38f7-f7c9-481a-8735-e0b7f92564fb" class="plan-cta cta-annual-only">Get Professional (Annual)</a>
+      </div>
+      <div class="plan-card">
+        <div class="plan-name">Business</div>
+        <div class="plan-price">
+          <span class="monthly-price">£299 <span>/ month</span></span>
+          <span class="annual-price">£2,990 <span>/ year</span><span class="price-equiv">£249.17/mo, billed annually</span></span>
+        </div>
+        <span class="annual-saving">Save £598 - 2 months free</span>
+        <div class="plan-blurb">For industry teams: branded reports, unlimited API calls, and 1M rows.</div>
+        <ul class="plan-features">
+          <li>1,000 cleaning runs per month</li>
+          <li>Up to 1,000,000 rows</li>
+          <li>200 MB file size limit</li>
+          <li>Excel, PDF &amp; branded reports</li>
+          <li>Premium charts</li>
+          <li>Unlimited API calls</li>
+        </ul>
+        <a href="https://coltradataai.lemonsqueezy.com/checkout/buy/4551704f-4fa4-45c5-9b11-6ef146964f78" class="plan-cta cta-monthly-only">Get Business</a>
+        <a href="https://coltradataai.lemonsqueezy.com/checkout/buy/216f4c52-b280-4a7b-8362-07fc05c02115" class="plan-cta cta-annual-only">Get Business (Annual)</a>
+      </div>
+      <div class="plan-card">
+        <div class="plan-name">Enterprise</div>
+        <div class="plan-price">from £999 <span>/ month</span></div>
+        <div class="plan-blurb">White label, dedicated database, SLA, and custom AI workflows.</div>
+        <ul class="plan-features">
+          <li>Unlimited cleaning runs</li>
+          <li>Unlimited rows</li>
+          <li>500 MB file size limit</li>
+          <li>All outputs + white-label</li>
+          <li>Dedicated support + SLA</li>
+          <li>Custom AI workflows</li>
+        </ul>
+        <a href="mailto:sales@coltradata.com" class="plan-cta">Contact Sales</a>
+      </div>
+    </div>
+    <div class="pricing-note-wrap">
+      <span class="pricing-note">📱 All plans include full mobile access, no separate app purchase required.</span>
+    </div>
+    <div style="margin-top:2rem;background:linear-gradient(135deg,#EBF4FF 0%,#E0F4F8 100%);border:1.5px solid #2E86AB;border-radius:16px;padding:1.5rem 2rem;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;justify-content:space-between;">
+      <div>
+        <div style="display:flex;gap:0.6rem;align-items:center;margin-bottom:0.6rem;">
+          <span style="background:#2E86AB;color:white;font-size:0.62rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:100px;">For Developers</span>
+          <span style="font-size:0.78rem;color:#2E86AB;font-weight:600;">Standalone REST API - no app subscription required</span>
+        </div>
+        <p style="font-size:1.05rem;font-weight:800;color:#1F4E79;margin:0 0 4px;">Enterprise API <span style="font-size:0.88rem;font-weight:500;color:#111827;">- £499<span style="font-size:0.78rem;font-weight:400;color:#5a6a7a;">/month</span></span></p>
+        <p style="font-size:0.82rem;color:#4B5563;margin:0 0 0.75rem;max-width:620px;">Integrate ColtraDataAi's cleaning engine directly into your own systems or pipelines. All 8 domain cleaners as REST endpoints. API key auto-delivered on purchase.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:4px 1.5rem;">
+          <span style="font-size:0.75rem;color:#374151;">&#10003; All 8 domain cleaners</span>
+          <span style="font-size:0.75rem;color:#374151;">&#10003; CSV &amp; JSON input</span>
+          <span style="font-size:0.75rem;color:#374151;">&#10003; Unlimited API calls</span>
+          <span style="font-size:0.75rem;color:#374151;">&#10003; Bearer token auth</span>
+          <span style="font-size:0.75rem;color:#374151;">&#10003; Swagger / OpenAPI docs</span>
+          <span style="font-size:0.75rem;color:#374151;">&#10003; Usage analytics dashboard</span>
+        </div>
+      </div>
+      <div style="text-align:center;flex-shrink:0;">
+        <a href="https://coltradataai.lemonsqueezy.com/checkout/buy/2de1db2f-2e4c-4a39-9585-c328afbfeafb" target="_blank" rel="noopener" class="cta-monthly-only" style="display:inline-block;background:#2E86AB;color:white;font-weight:700;font-size:0.88rem;padding:0.7rem 1.6rem;border-radius:9px;text-decoration:none;white-space:nowrap;">Get API Access &#8594;</a>
+        <a href="https://coltradataai.lemonsqueezy.com/checkout/buy/2f0f30f8-88d4-4bea-891c-9852507a439c" target="_blank" rel="noopener" class="cta-annual-only" style="background:#2E86AB;color:white;font-weight:700;font-size:0.88rem;padding:0.7rem 1.6rem;border-radius:9px;text-decoration:none;white-space:nowrap;">Get API Access (Annual) &#8594;</a>
+        <p style="font-size:0.7rem;color:#5a6a7a;text-align:center;margin:5px 0 0;">API key delivered by email</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <div class="section-label">About ColtraDataAi</div>
+        <h2 class="section-title">Built for People Who Work with Data</h2>
+        <p>ColtraDataAi is an <strong>AI-powered analytics platform</strong> that helps businesses, consultants, researchers, educators, and professionals transform Excel and CSV data into insights, dashboards, AI recommendations, and professional reports within minutes.</p>
+        <p>No coding. No technical expertise. No waiting. Just upload your data and let ColtraDataAi do the heavy lifting.</p>
+        <div class="about-tags">
+          <span class="tag">Businesses</span>
+          <span class="tag">Consultants</span>
+          <span class="tag">Researchers</span>
+          <span class="tag">Educators</span>
+          <span class="tag">Finance Teams</span>
+          <span class="tag">Analysts</span>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-number">5</div>
+          <div class="stat-label">Plan tiers for every need</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">1M+</div>
+          <div class="stat-label">Rows processed on Enterprise</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">&lt;2min</div>
+          <div class="stat-label">From upload to insight</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">0</div>
+          <div class="stat-label">Lines of code required</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">Got Questions?</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Everything you need to know about ColtraDataAi.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">What file formats does ColtraDataAi support?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>ColtraDataAi supports Excel files (.xlsx, .xls) and CSV files (.csv). File size limits depend on your plan: 10 MB (Free), 25 MB (Starter), 75 MB (Professional), 150 MB (Premium), and 300 MB (Enterprise).</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">Do I need any technical skills to use it?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>None at all. If you can upload a file and click a button, you can use ColtraDataAi. The platform handles all the technical work: cleaning, analysing, and reporting, automatically.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">Is my data secure?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Yes. Your files are processed securely and are not permanently stored or shared with any third party. We are GDPR-compliant. See our <a href="privacy.html">Privacy Policy</a> for full details.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">What if my sign-in code doesn't arrive?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Check your spam or junk folder first. If it still hasn't arrived, the sign-in screen has a <strong>Need a new code?</strong> button that sends a fresh code to the same address. Your sign-in email also includes a <strong>Tap to pre-fill code in app</strong> button - clicking it opens the app with the code already filled in, so you can sign in without typing anything.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">Can I try ColtraDataAi before buying?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Yes. Our Free plan gives you 3 cleaning runs per month with up to 5,000 rows, no credit card required. You can also download sample reports from our <a href="#samples">Sample Outputs</a> section without signing up at all.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">How does the AI Advisory work?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>After cleaning and analysing your data, ColtraDataAi's AI engine generates plain-English recommendations specific to your dataset, highlighting trends, anomalies, risks, and opportunities relevant to your business context.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">What does a Professional report include?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>A Professional-tier PDF report includes an executive summary, data quality analysis, visual charts, advanced analytics, AI-powered advisory recommendations, and a modelling readiness assessment. You can see a real example in our <a href="#samples">Sample Outputs</a> section.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">Can I cancel my subscription at any time?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Yes, absolutely. There are no lock-in contracts. You can cancel, upgrade, or downgrade your plan at any time. For billing queries contact <a href="mailto:support@coltradata.com">support@coltradata.com</a>.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">How do I upgrade my plan?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Select your new plan from the <a href="#pricing">Pricing section</a> above and complete the checkout. Upgrades take effect immediately. Contact <a href="mailto:support@coltradata.com">support@coltradata.com</a> if you need any assistance.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">Can I use ColtraDataAi on my phone or tablet?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Yes. ColtraDataAi is fully responsive and works on iPhone, Android, iPad, and any tablet. Upload files, view dashboards, and download reports, all from your mobile device. No app download required.<br /><br /><strong>iPhone / iPad (Safari):</strong> Tap the Share button, then tap <strong>Add to Home Screen</strong>.<br /><strong>Android (Chrome):</strong> Tap the three-dot menu, then tap <strong>Add to Home Screen</strong> or <strong>Install app</strong>.<br /><br />The ColtraDataAi icon will appear on your home screen for quick, full-screen, app-like access.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">Do I need to download an app?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>No. ColtraDataAi works entirely in your browser, nothing to install, nothing to update. Open <a href="https://app.coltradata.com">app.coltradata.com</a> on any device and you are ready to go. You can optionally add it to your home screen for a full-screen app experience, but it is not required.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">What are push notifications and how do I get them?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Once you add ColtraDataAi to your home screen, you can opt in to push notifications. We will alert you when a report finishes generating or a scheduled analysis completes, even when the app is not open. Push notifications are supported on Android (Chrome) and on iPhone and iPad running iOS 16.4 or later.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">Is my data safe when I use ColtraDataAi on mobile?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Absolutely. Mobile sessions use the same HTTPS encryption and secure server-side processing as desktop. Your files are processed and then deleted after analysis, and are never stored permanently or shared with any third party. See our <a href="privacy.html">Privacy Policy</a> for full details.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Closing CTA -->
+<section class="closing">
+  <div class="container">
+    <h2>Ready to Unlock the Value Hidden in Your Data?</h2>
+    <p>Join organisations and professionals using ColtraDataAi to make faster, smarter, and more confident decisions.</p>
+    <div class="closing-ctas">
+      <a href="https://app.coltradata.com" class="btn-hero-primary">🚀 Start Free Trial Today</a>
+      <a href="https://app.coltradata.com" class="btn-hero-outline">🔑 Log In to Your Account</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <img src="assets/logo.png" alt="ColtraDataAi" /><br />
+  <div class="footer-links">
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="privacy.html#cookies">Cookie Policy</a>
+    <a href="mailto:support@coltradata.com">support@coltradata.com</a>
+  </div>
+  <p>
+    ColtraDataAi is a trading name of Coltrane Ltd, registered in England and Wales<br />
+    Company No. 09088932 &nbsp;·&nbsp; Registered office: Kemp House, 128 City Road, London EC1V 2NX<br /><br />
+    &copy; 2026 ColtraDataAi &nbsp;·&nbsp; All Rights Reserved
+  </p>
+</footer>
+
+<!-- Chatbot widget -->
+<button class="chat-toggle" onclick="toggleChat()" aria-label="Open chat assistant">💬</button>
+<div class="chat-window" id="chatWindow">
+  <div class="chat-header">
+    <span>💬 ColtraDataAi Assistant</span>
+    <button class="chat-close-btn" onclick="toggleChat()" aria-label="Close chat">✕</button>
+  </div>
+  <div class="chat-messages" id="chatMessages">
+    <div class="chat-msg bot">Hi! I'm the ColtraDataAi assistant. Ask me anything about plans, features, or how it works. 👋</div>
+  </div>
+  <div class="chat-chips" id="chatChips">
+    <button class="chat-chip" onclick="sendChip('What plans are available?')">Plans &amp; Pricing</button>
+    <button class="chat-chip" onclick="sendChip('What file formats are supported?')">File formats</button>
+    <button class="chat-chip" onclick="sendChip('Is my data secure?')">Data security</button>
+    <button class="chat-chip" onclick="sendChip('How do I get started?')">Get started</button>
+  </div>
+  <div class="chat-input-row">
+    <input class="chat-input" id="chatInput" type="text" placeholder="Ask a question…" onkeydown="if(event.key==='Enter') sendMessage()" />
+    <button class="chat-send-btn" onclick="sendMessage()" aria-label="Send">➤</button>
+  </div>
+</div>
+
+<!-- Cookie consent banner -->
+<div class="cookie-banner" id="cookieBanner" style="display:none;">
+  <span>We use essential cookies to keep the site running, and optional analytics cookies to improve your experience. <a href="privacy.html#cookies">Learn more</a></span>
+  <div class="cookie-btns">
+    <button class="cookie-accept" onclick="setCookieConsent('accepted')">Accept All</button>
+    <button class="cookie-decline" onclick="setCookieConsent('essential')">Essential Only</button>
+  </div>
+</div>
+
+<script>
+  // FAQ accordion
+  function toggleFAQ(btn) {
+    const item = btn.closest('.faq-item');
+    const answer = item.querySelector('.faq-a');
+    const isOpen = btn.classList.contains('open');
+    document.querySelectorAll('.faq-q.open').forEach(q => {
+      q.classList.remove('open');
+      q.closest('.faq-item').querySelector('.faq-a').classList.remove('open');
+    });
+    if (!isOpen) { btn.classList.add('open'); answer.classList.add('open'); }
+  }
+
+  // Chatbot
+  function toggleChat() {
+    document.getElementById('chatWindow').classList.toggle('open');
+  }
+
+  const botRules = [
+    { k: ['plan','price','cost','pricing','tier','much','starter','professional','business','enterprise','subscription'], a: 'We offer 5 plans:<br>• Free – £0/mo (3 runs, 5k rows)<br>• Starter – £29/mo (50 runs, 50k rows)<br>• Professional – £99/mo (200 runs, 250k rows)<br>• Business – £299/mo (1,000 runs, 1M rows)<br>• Enterprise – from £999/mo (contact sales)<br><br>We also offer the <strong>Enterprise API</strong> at £499/mo - a standalone REST API with no app subscription required. <a href="#pricing">See full plan details →</a>' },
+    { k: ['api','developer','endpoint','rest','programmatic','pipeline','integrate','integration'], a: 'The <strong>Enterprise API</strong> (£499/mo) exposes all 8 domain cleaners as REST endpoints: CSV &amp; JSON input, Bearer token auth, auto-delivered key on purchase. No app subscription required. <a href="#pricing">See details →</a>' },
+    { k: ['free','trial','no card','signup','sign up','register'], a: 'Our Free plan lets you try ColtraDataAi with 3 cleaning runs/month and up to 5,000 rows, no credit card required. <a href="https://app.coltradata.com">Start free →</a>' },
+    { k: ['file','format','excel','csv','upload','xlsx','xls','size','mb'], a: 'ColtraDataAi accepts Excel (.xlsx, .xls) and CSV (.csv) files. Size limits: 10 MB (Free) · 25 MB (Starter) · 75 MB (Professional) · 150 MB (Premium) · 300 MB (Enterprise).' },
+    { k: ['secure','privacy','data','gdpr','safe','store','stored','share'], a: 'Your data is processed securely and never permanently stored or shared with third parties. We are GDPR-compliant. <a href="privacy.html">Read our Privacy Policy →</a>' },
+    { k: ['cancel','refund','contract','lock','downgrade'], a: 'No lock-in contracts. Cancel, upgrade, or downgrade at any time. For billing help email <a href="mailto:support@coltradata.com">support@coltradata.com</a>.' },
+    { k: ['how','start','begin','work','use','step','process'], a: 'Three steps: 1) Upload your Excel or CSV file, 2) ColtraDataAi cleans and analyses it automatically, 3) Download your PDF or Excel report. No coding needed!' },
+    { k: ['contact','support','help','email','team'], a: 'Our support team is at <a href="mailto:support@coltradata.com">support@coltradata.com</a>, we typically reply within 24 hours.' },
+    { k: ['ai','advisory','recommendation','insight','intelligence'], a: "After cleaning your data, ColtraDataAi's AI engine generates plain-English recommendations specific to your dataset, highlighting trends, anomalies, risks, and opportunities." },
+    { k: ['report','pdf','download','export'], a: 'Starter+ plans include Excel export. Professional, Premium, and Enterprise plans include full PDF reports with executive summaries, charts, AI insights, and quality analysis.' },
+    { k: ['feature','what','capability','include','does it'], a: 'ColtraDataAi offers: ✓ Automated data cleaning ✓ Advanced analytics ✓ AI-powered insights ✓ Interactive dashboards ✓ Professional PDF &amp; Excel reports ✓ Branded reporting (Premium+)' },
+    { k: ['sample','example','demo','video'], a: 'You can <a href="#demo">watch the 2-minute demo</a> or <a href="#samples">download sample reports</a>, no sign-up needed.' },
+    { k: ['login','log in','sign in','account'], a: 'Already have an account? <a href="https://app.coltradata.com">Log in here →</a>' },
+    { k: ['mobile','phone','tablet','home screen','pwa','android','iphone','ipad','device','app icon'], a: 'ColtraDataAi works in any modern browser on desktop, tablet, or smartphone. To add it to your home screen: on iPhone/iPad, tap Share → <strong>Add to Home Screen</strong>; on Android, tap the browser menu → <strong>Add to Home Screen</strong>. The ColtraDataAi icon will appear for quick, app-like access, no app store required.' },
+  ];
+
+  function getBotReply(msg) {
+    const lower = msg.toLowerCase();
+    for (const rule of botRules) {
+      if (rule.k.some(kw => lower.includes(kw))) return rule.a;
+    }
+    return 'Good question! Check our <a href="#faq">FAQ section</a> or email <a href="mailto:support@coltradata.com">support@coltradata.com</a>, we\'re happy to help.';
+  }
+
+  function appendMsg(text, type) {
+    const msgs = document.getElementById('chatMessages');
+    const div = document.createElement('div');
+    div.className = 'chat-msg ' + type;
+    div.innerHTML = text;
+    msgs.appendChild(div);
+    msgs.scrollTop = msgs.scrollHeight;
+  }
+
+  function sendChip(text) {
+    document.getElementById('chatChips').style.display = 'none';
+    sendText(text);
+  }
+
+  function sendMessage() {
+    const input = document.getElementById('chatInput');
+    const text = input.value.trim();
+    if (!text) return;
+    input.value = '';
+    document.getElementById('chatChips').style.display = 'none';
+    sendText(text);
+  }
+
+  function sendText(text) {
+    appendMsg(text, 'user');
+    setTimeout(() => appendMsg(getBotReply(text), 'bot'), 420);
+  }
+
+  // Cookie consent
+  function setCookieConsent(val) {
+    localStorage.setItem('cookieConsent', val);
+    document.getElementById('cookieBanner').style.display = 'none';
+    document.body.classList.remove('cookie-visible');
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    if (!localStorage.getItem('cookieConsent')) {
+      setTimeout(() => {
+        document.getElementById('cookieBanner').style.display = 'flex';
+        document.body.classList.add('cookie-visible');
+      }, 1200);
+    }
+  });
+  function toggleIdxBilling() {
+    const annual = document.getElementById('idxBillingToggle').checked;
+    document.body.classList.toggle('annual-mode', annual);
+    document.getElementById('idx-lbl-monthly').classList.toggle('active', !annual);
+    document.getElementById('idx-lbl-annual').classList.toggle('active', annual);
+  }
+</script>
+
+</body>
+</html>
